@@ -158,9 +158,10 @@ main > p > a::after {
 /* Aside */
 aside {
     background-color: var(--color0);
-    margin: 5px;
+    margin: -5px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.356);
+    padding: 7px;
 }
 aside h1 {
     color: white;
@@ -179,6 +180,7 @@ aside p {
 .list {
     list-style-type: none;
     height: auto;
+    padding: 15px;
     columns: 2;
 }
 
