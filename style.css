@@ -166,7 +166,7 @@ aside {
 aside h1 {
     color: white;
     padding: 10px;
-    margin: 0px;
+    margin: -7px;
     background-color: var(--color1);
     border-radius: 10px 10px 0px 0px;
 }
