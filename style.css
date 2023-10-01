@@ -178,7 +178,6 @@ aside p {
 }
 .list {
     list-style-type: none;
-    width: 85%;
     height: auto;
     columns: 2;
 }
