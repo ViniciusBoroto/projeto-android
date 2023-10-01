@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: Idroid;
+    src: url(fontes/idroid.otf);
+}
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+:root {
+    --color0: #a4dfc0;
+    --color1: #55b985;
+    --color2: #06351D;
+    --color3: #26a161;
+}
+
+/* BODY */
+
+body {
+    background-color: #55b985;
+}
+
+/* HEADER */
+
+header {
+    color: white;
+    background-image: linear-gradient(180deg, var(--color1), var(--color2) );
+    text-align: center;
+    padding-top: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+}
+header > h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px auto 0px auto;
+    max-width: 500px;
+    text-indent: 0px;
+    padding-bottom: 15px;
+}
+
+/* NAV */
+
+nav {
+    text-align: left;
+    padding-top: 20px;
+    background-color: var(--color2);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.603);
+    padding-bottom: 11px;
+}
+nav > a {
+    text-decoration: none;
+    color: var(--color0);
+    padding: 7px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-weight: light;
+    transition-duration: 0.25s;
+}
+nav > a:hover {
+    background-color: var(--color1);
+}
+
+/* MAIN */
+
+main {
+    background-color: white;
+    min-width: 280px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 0px 0px 8px 8px;
+    margin: 0px auto;
+}
+
+strong {
+    font-weight: 1000;
+    color: var(--color2);
+    text-shadow: 0px 0px 5px rgba(0, 90, 33, 0.199);
+}
+picture, img {
+    margin: auto;
+    width: 100%;
+}
+.smallpic, .smallpic > * {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+/* h's */
+main > h1, h2 {
+    font-family: Idroid;
+    font-weight: normal;
+    color: var(--color2);
+    /* margin: 15px; */
+}
+main > h1 {
+    font-size: 2.2em;
+}
+main > h1:first-of-type {
+    margin-top: 0px;
+}
+main > h2 {
+    background-image: linear-gradient(90deg, #26a16181, white);
+    padding: 3px 0px 3px 8px;
+    border-radius: 5px;
+}
+/* p */
+p {
+    text-indent: 20px;
+}
+main p {
+    margin: 20px 0px;
+    text-align: justify;
+    line-height: 2;
+}
+main p > a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: 600;
+    padding: 5px 0px 5px 5px;
+    border-radius: 4px;
+    transition-duration: 0.15s;
+}
+main > p > a:hover {
+    background-color: #26a16146;
+}
+main > p > a::after {
+    content: '🔗';
+}
+/* videoSection */
+.video {
+    background-color: var(--color2);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video > iframe {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/* Aside */
+aside {
+    background-color: var(--color0);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.356);
+}
+aside h1 {
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    background-color: var(--color1);
+    border-radius: 10px 10px 0px 0px;
+}
+aside p {
+    margin: 15px 20px 5px 20px;
+}
+#listDiv {
+    margin: 0px 5px 5px 5px;
+    height: 20px;
+    display: inline;
+    width: 700px;
+}
+.list {
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    columns: 2;
+}
+
+.list > li::before {
+    content: '✔ ';
+}
+
+footer {
+    background-color: var(--color2);
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+footer p {
+    text-indent: 0px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color0);
+}
