@@ -180,7 +180,7 @@ aside p {
 .list {
     list-style-type: none;
     height: auto;
-    padding: 15px;
+    padding: 10px;
     columns: 2;
 }
 
